@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️</title>
+
+<style>
+body{
+    margin:0;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial,sans-serif;
+    color:white;
+    text-align:center;
+}
+
+.screen{
+    padding:40px 20px;
+}
+
+button{
+    background:white;
+    color:#ff4d6d;
+    border:none;
+    padding:15px 25px;
+    border-radius:25px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:20px;
+    max-width:600px;
+    margin:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div id="welcome" class="screen">
+    <h1>🎂 Happy Birthday ❤️</h1>
+    <p>Someone loves you very much and prepared a little adventure.</p>
+    <button onclick="startJourney()">Begin</button>
+</div>
+
+<div id="quiz1" class="screen hidden">
+    <div class="card">
+        <h2>Challenge 1</h2>
+        <p>What color is love?</p>
+
+        <button onclick="showGallery()">Red ❤️</button>
+        <button onclick="alert('Try again 😋')">Blue</button>
+    </div>
+</div>
+
+<div id="gallery" class="screen hidden">
+    <div class="card">
+        <h2>📸 Memories Gallery</h2>
+        <p>Your photos and videos will appear here.</p>
+
+        <button onclick="showLetter()">Continue</button>
+    </div>
+</div>
+
+<div id="letter" class="screen hidden">
+    <div class="card">
+        <h2>💌 Birthday Letter</h2>
+
+        <p>
+        My love,<br><br>
+        This is where your personal birthday note will be displayed.
+        <br><br>
+        Love always ❤️
+        </p>
+
+        <button onclick="showSpa()">Final Surprise</button>
+    </div>
+</div>
+
+<div id="spa" class="screen hidden">
+    <div class="card">
+        <h2>🧖 Spa Surprise</h2>
+
+        <p>Your spa reservation PDF or screenshot will appear here.</p>
+
+        <h1>🎉🎉🎉</h1>
+
+        <p>Happy Birthday ❤️</p>
+    </div>
+</div>
+
+<script>
+function startJourney(){
+document.getElementById("welcome").classList.add("hidden");
+document.getElementById("quiz1").classList.remove("hidden");
+}
+
+function showGallery(){
+document.getElementById("quiz1").classList.add("hidden");
+document.getElementById("gallery").classList.remove("hidden");
+}
+
+function showLetter(){
+document.getElementById("gallery").classList.add("hidden");
+document.getElementById("letter").classList.remove("hidden");
+}
+
+function showSpa(){
+document.getElementById("letter").classList.add("hidden");
+document.getElementById("spa").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
