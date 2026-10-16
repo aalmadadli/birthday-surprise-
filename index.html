@@ -1,68 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#fff8f3">
-<title>Happy 22nd Birthday ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Happy Birthday ❤️</title>
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
-:root{--cream:#fffaf6;--white:#fffdfb;--blush:#f6d9dc;--rose:#c96f7c;--deep:#9d4f5c;--gold:#bd9462;--ink:#4a3737;--muted:#806c6c;--shadow:0 22px 60px rgba(117,73,72,.15)}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;font-family:'DM Sans',Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 12% 12%,rgba(246,217,220,.75),transparent 30%),radial-gradient(circle at 90% 18%,rgba(247,223,207,.9),transparent 28%),linear-gradient(145deg,#fffaf6,#fffdfb 48%,#fff4ef)}button{font:inherit}.hidden{display:none!important}
-.screen{display:none;position:relative;width:100%;min-height:100svh;padding:82px 20px 45px;align-items:center;justify-content:center;overflow:hidden}.screen.active{display:flex;animation:screenIn .55s ease both}@keyframes screenIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.content{width:min(100%,620px);position:relative;z-index:2;text-align:center}.eyebrow{margin:0 0 12px;color:var(--gold);font-size:.73rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}h1,h2,h3{margin-top:0;font-family:'Playfair Display',Georgia,serif}h1{margin-bottom:18px;font-size:clamp(2.8rem,11vw,5.4rem);line-height:.98;letter-spacing:-.055em}h2{margin-bottom:12px;font-size:clamp(2rem,8vw,3.4rem);line-height:1.07}.script{display:block;margin-top:10px;color:var(--rose);font-style:italic}.subtitle{max-width:470px;margin:0 auto;color:var(--muted);line-height:1.75}.primary{margin-top:26px;padding:15px 26px;border:0;border-radius:999px;color:#fff;background:linear-gradient(135deg,#bd727d,#9d4f5c);box-shadow:0 14px 30px rgba(157,79,92,.25);cursor:pointer}.primary:active{transform:scale(.97)}
-.topbar{position:fixed;top:0;left:0;z-index:20;width:100%;padding:max(14px,env(safe-area-inset-top)) 16px 9px;display:flex;align-items:center;gap:12px;background:linear-gradient(to bottom,rgba(255,250,246,.98),transparent)}.track{flex:1;height:4px;border-radius:20px;background:rgba(157,79,92,.12);overflow:hidden}.fill{width:0;height:100%;background:linear-gradient(90deg,var(--rose),var(--gold));transition:width .5s}.sound{width:40px;height:40px;border:1px solid rgba(189,148,98,.3);border-radius:50%;color:var(--deep);background:rgba(255,255,255,.82);cursor:pointer}.orb{position:absolute;border-radius:50%}.o1{width:230px;height:230px;top:-75px;right:-70px;background:rgba(246,217,220,.8)}.o2{width:190px;height:190px;bottom:-60px;left:-65px;background:rgba(234,214,185,.6)}.date{display:inline-flex;gap:9px;margin-bottom:28px;padding:9px 14px;border:1px solid rgba(189,148,98,.3);border-radius:999px;color:var(--gold);background:rgba(255,255,255,.55);font-size:.78rem;letter-spacing:.12em}.tiny{margin-top:17px;color:#a18b8b;font-size:.77rem}
-.card{padding:27px 20px;border:1px solid rgba(255,255,255,.87);border-radius:30px;background:rgba(255,253,251,.72);box-shadow:var(--shadow);backdrop-filter:blur(18px)}.memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:430px;margin:25px auto 8px;perspective:900px}.memory-card{position:relative;aspect-ratio:.78;padding:0;border:0;background:transparent;cursor:pointer;transform-style:preserve-3d;transition:transform .5s}.memory-card.flipped,.memory-card.matched{transform:rotateY(180deg)}.face{position:absolute;inset:0;display:grid;place-items:center;border-radius:18px;box-shadow:0 12px 36px rgba(117,73,72,.11);backface-visibility:hidden}.back{border:1px solid rgba(189,148,98,.3);color:var(--gold);background:#fffdfb;font-family:'Playfair Display',serif;font-size:1.5rem}.front{transform:rotateY(180deg);background:linear-gradient(145deg,#fff,#fff1ec);font-size:1.8rem}.status{min-height:24px;margin:15px 0 0;color:var(--rose)}
-.photo-frame{max-width:440px;margin:22px auto 0;padding:10px 10px 22px;border-radius:25px;background:#fff;box-shadow:var(--shadow)}.photo-frame img{width:100%;height:min(57vh,540px);display:block;object-fit:contain;border-radius:18px;background:#f8efeb;transition:.3s}.caption{min-height:25px;margin:14px 8px 0;font-family:'Playfair Display',Georgia,serif;font-style:italic}.gallery-controls{display:flex;justify-content:center;gap:13px;margin-top:22px}.round{width:52px;height:52px;border:1px solid rgba(189,148,98,.32);border-radius:50%;color:var(--deep);background:rgba(255,255,255,.8);cursor:pointer}.count{margin-top:12px;color:var(--muted);font-size:.76rem;letter-spacing:.12em}
-.cinema{margin-top:24px;padding:8px;border-radius:25px;background:#231c1d;box-shadow:0 25px 60px rgba(53,35,37,.28)}video{width:100%;max-height:68vh;display:block;border-radius:18px;background:#000}.hunt{position:relative;height:410px;max-width:500px;margin:22px auto 0;overflow:hidden;border-radius:30px;background:linear-gradient(155deg,#f8dfe0,#fff8f2 52%,#f2dec9);box-shadow:var(--shadow)}.heart{position:absolute;z-index:3;padding:9px;border:0;color:var(--deep);background:transparent;font-size:1.65rem;cursor:pointer;animation:beat 1.4s infinite}.heart.found{pointer-events:none;animation:found .5s forwards}@keyframes beat{50%{transform:scale(1.18)}}@keyframes found{to{opacity:0;transform:scale(2.5) rotate(25deg)}}.counter{margin-top:14px;color:var(--rose);font-weight:600}
-.envelope{position:relative;width:min(100%,500px);aspect-ratio:1.55;margin-top:28px;border:0;border-radius:16px;background:linear-gradient(145deg,#f3ceca,#dda8aa);box-shadow:var(--shadow);cursor:pointer}.seal{position:absolute;top:50%;left:50%;width:54px;height:54px;display:grid;place-items:center;transform:translate(-50%,-50%);border-radius:50%;color:#fff;background:var(--deep);font-family:'Playfair Display',serif}.letter{display:none;max-width:500px;margin:25px auto 0;padding:30px 24px;border-radius:8px 8px 20px 20px;background:#fffdf8;box-shadow:var(--shadow);text-align:left;line-height:1.85}.letter.visible{display:block;animation:screenIn .55s}.signature{color:var(--deep);font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic}.stars{margin-top:25px;padding:28px 18px;border-radius:30px;background:rgba(255,255,255,.72);box-shadow:var(--shadow)}.star-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.star{padding:3px;border:0;color:#d1b893;background:transparent;font-size:2.2rem;cursor:pointer}.star.lit{color:#e0a544;transform:scale(1.22);filter:drop-shadow(0 0 8px rgba(224,165,68,.62))}
-.gift-box{width:190px;height:160px;position:relative;margin:30px auto;cursor:pointer}.base{position:absolute;bottom:0;left:10px;width:170px;height:110px;border-radius:7px 7px 16px 16px;background:linear-gradient(135deg,#dba8ad,#bd727d);box-shadow:var(--shadow)}.lid{position:absolute;top:30px;left:0;z-index:3;width:190px;height:38px;border-radius:9px;background:linear-gradient(135deg,#e9bdc0,#c9828c);transition:.7s}.ribbon{position:absolute;top:30px;bottom:0;left:78px;z-index:4;width:34px;background:linear-gradient(90deg,#d4b078,#f5dfb9,#c89954)}.gift-box.open .lid{transform:translate(-12px,-58px) rotate(-12deg)}.gift-reveal{display:none;max-width:500px;margin:auto}.gift-reveal.visible{display:block;animation:screenIn .7s}.gift-image{width:100%;display:block;border:9px solid #fff;border-radius:24px;box-shadow:var(--shadow)}.final{margin:27px auto 0;color:var(--deep);font-family:'Playfair Display',serif;font-size:1.08rem;font-style:italic;line-height:1.65}.confetti{position:fixed;top:-20px;z-index:50;width:9px;height:15px;border-radius:3px;pointer-events:none;animation:fall 3.7s linear forwards}@keyframes fall{to{opacity:0;transform:translateY(110vh) rotate(760deg)}}
-@media(max-width:390px){.screen{padding-left:16px;padding-right:16px}.card{padding:23px 15px}.memory-grid{gap:8px}.hunt{height:385px}}
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff8f5;
+    color:#5a4343;
+    text-align:center;
+}
+
+.section{
+    padding:40px 20px;
+}
+
+img{
+    width:90%;
+    max-width:500px;
+    border-radius:20px;
+    margin:20px auto;
+    display:block;
+}
+
+video{
+    width:90%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+button{
+    background:#c96f7c;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
 </style>
 </head>
+
 <body>
-<div class="topbar"><div class="track"><div id="progressFill" class="fill"></div></div><button id="soundButton" class="sound" type="button" onclick="toggleSound()" aria-label="Toggle sound">♪</button></div>
 
-<section id="welcome" class="screen active"><div class="orb o1"></div><div class="orb o2"></div><div class="content"><div class="date">✦ 17 OCTOBER 2026 ✦</div><p class="eyebrow">A little journey made with love</p><h1>Happy 22nd<span class="script">Birthday, My Love</span></h1><p class="subtitle">I collected a few memories, a few little challenges, and one final surprise, especially for you.</p><button class="primary" type="button" onclick="beginJourney()">Begin our journey ✨</button><p class="tiny">Sound is best experienced with headphones</p></div></section>
+<div id="welcome" class="section">
+    <h1>Happy 22nd Birthday ❤️</h1>
 
-<section id="memoryGame" class="screen"><div class="content"><div class="card"><p class="eyebrow">Chapter One</p><h2>Match the little moments</h2><p class="subtitle">Find all four matching pairs to unlock our memories.</p><div id="memoryGrid" class="memory-grid"></div><p id="memoryStatus" class="status">0 of 4 pairs found</p><button id="memoryContinue" class="primary hidden" type="button" onclick="openGallery()">Unlock our memories ♡</button></div></div></section>
+    <p>
+        I made a small journey of memories just for you.
+    </p>
 
-<section id="gallery" class="screen"><div class="content"><p class="eyebrow">Our little collection</p><h2>Memories with you</h2><p class="subtitle">Every picture holds a moment I am grateful we shared.</p><div class="photo-frame"><img id="galleryImage" src="assets/photos/IMG_0172.jpeg" alt="A shared memory"><p id="galleryCaption" class="caption"></p></div><div class="gallery-controls"><button class="round" type="button" onclick="previousPhoto()" aria-label="Previous photo">←</button><button class="round" type="button" onclick="nextPhoto()" aria-label="Next photo">→</button></div><div id="photoCount" class="count"></div><button id="galleryContinue" class="primary hidden" type="button" onclick="showVideo()">Watch something special ✦</button></div></section>
+    <button onclick="startJourney()">
+        Begin Our Journey ✨
+    </button>
+</div>
 
-<section id="videoSection" class="screen"><div class="content"><p class="eyebrow">Just for you</p><h2>A moment in motion</h2><p class="subtitle">Some memories deserve more than a photograph.</p><div class="cinema"><video id="birthdayVideo" controls playsinline preload="metadata"><source src="assets/video/video.mp4" type="video/mp4">Your browser does not support video.</video></div><button class="primary" type="button" onclick="afterVideo()">Continue the journey ♡</button></div></section>
+<div id="gallery" class="section hidden">
 
-<section id="heartHunt" class="screen"><div class="content"><p class="eyebrow">Chapter Two</p><h2>Find five hidden hearts</h2><p class="subtitle">A small message is waiting behind them.</p><div class="hunt"><button class="heart" style="top:8%;left:11%" onclick="findHeart(this)">♥</button><button class="heart" style="top:17%;right:10%" onclick="findHeart(this)">♥</button><button class="heart" style="top:48%;left:43%" onclick="findHeart(this)">♥</button><button class="heart" style="bottom:12%;left:12%" onclick="findHeart(this)">♥</button><button class="heart" style="bottom:16%;right:12%" onclick="findHeart(this)">♥</button></div><div id="huntCounter" class="counter">0 / 5 hearts found</div><button id="letterButton" class="primary hidden" type="button" onclick="showScreen('letterSection',68)">Open your letter 💌</button></div></section>
+    <h2>Our Memories 📸</h2>
 
-<section id="letterSection" class="screen"><div class="content"><p class="eyebrow">A few words from my heart</p><h2>This one is for you</h2><p id="letterHint" class="subtitle">Tap the envelope to open your letter.</p><button id="envelope" class="envelope" type="button" onclick="openLetter()"><span class="seal">A</span></button><article id="letterPaper" class="letter"><p>My love,</p><p>Happy birthday to the person who makes ordinary moments feel special simply by being part of them.</p><p>Looking through these memories reminded me how many beautiful little chapters we have already shared: the laughter, the adventures, the celebrations, and the quiet moments that mean more than words can explain.</p><p>I hope your 22nd year brings you happiness, peace, exciting adventures, and every beautiful thing you deserve. I also hope I get to stand beside you while many of those new memories are created.</p><p>This little journey is one small way of reminding you how loved and appreciated you are, today and every day.</p><p class="signature">Happy birthday, my love.<br>With all my love,<br>Aslan ❤️</p></article><button id="letterContinue" class="primary hidden" type="button" onclick="showScreen('finalChallenge',83)">One final challenge ✨</button></div></section>
+    <imgts/photos/IMG_0172.jpeg
+    assets/photos/IMG_2531.jpeg
+    assets/photos/IMG_3003.jpeg
+    assets/photos/IMG_4279.jpeg
+    <ssets/photos/IMG_5589.jpeg
 
-<section id="finalChallenge" class="screen"><div class="content"><p class="eyebrow">The final lock</p><h2>Light up every star</h2><p class="subtitle">Tap each star and make one birthday wish.</p><div class="stars"><div class="star-row"><button class="star" onclick="lightStar(this)">★</button><button class="star" onclick="lightStar(this)">★</button><button class="star" onclick="lightStar(this)">★</button><button class="star" onclick="lightStar(this)">★</button><button class="star" onclick="lightStar(this)">★</button></div><p id="starStatus" class="status">0 of 5 stars glowing</p><button id="giftButton" class="primary hidden" type="button" onclick="showScreen('giftSection',94)">Reveal your birthday gift 🎁</button></div></div></section>
+    <button onclick="showVideo()">
+        Continue ❤️
+    </button>
 
-<section id="giftSection" class="screen"><div class="content"><p class="eyebrow">The final surprise</p><h2>A day dedicated to you</h2><p id="giftHint" class="subtitle">Tap the gift box to open it.</p><div id="giftBox" class="gift-box" onclick="openGift()" role="button" tabindex="0"><div class="base"></div><div class="lid"></div><div class="ribbon"></div></div><div id="giftReveal" class="gift-reveal"><img class="gift-image" src="assets/gift/gift.jpg" alt="Massage and spa gift card"><p class="final">Because you deserve a beautiful day devoted entirely to rest, relaxation, and yourself.</p><h3 style="margin-top:25px;color:#9d4f5c">Happy 22nd Birthday ❤️</h3><p class="subtitle">This may be the end of the website,<br>but it is only the beginning of another beautiful year.</p></div></div></section>
+</div>
+
+<div id="videoSection" class="section hidden">
+
+    <h2>A Special Video 🎬</h2>
+
+    <video controls>
+        assets/video/video.mp4
+    </video>
+
+    <br><br>
+
+    <button onclick="showLetter()">
+        Continue ❤️
+    </button>
+
+</div>
+
+<div id="letterSection" class="section hidden">
+
+    <h2>For You 💌</h2>
+
+    <p style="max-width:600px;margin:auto;line-height:1.8;">
+        Happy Birthday, my love.<br><br>
+
+        Thank you for all the memories, laughter,
+        conversations and moments we have shared.
+        Every photo above reminds me how lucky I am
+        to have you in my life.
+
+        <br><br>
+
+        I hope your 22nd year brings happiness,
+        success, peace and everything you deserve.
+
+        <br><br>
+
+        Love,<br>
+        Aslan ❤️
+    </p>
+
+    <br>
+
+    <button onclick="showGift()">
+        Open Your Gift 🎁
+    </button>
+
+</div>
+
+<div id="giftSection" class="section hidden">
+
+    <h2>Your Birthday Gift 🎁</h2>
+
+    <imgts/gift/gift.jpg
+
+    <h3>Massage & Spa Experience ❤️</h3>
+
+    <p>
+        Because you deserve a day dedicated entirely
+        to yourself.
+    </p>
+
+</div>
 
 <script>
-'use strict';
-const photos=['IMG_0172.jpeg','IMG_2531.jpeg','IMG_3003.jpeg','IMG_4279.jpeg','IMG_5589.jpeg','IMG_5847.jpeg','IMG_5913.jpeg','IMG_6815.jpeg','IMG_7205.jpeg','IMG_7454.jpeg','IMG_8283.jpeg','photo1.jpg','photo2.jpg','photo3.jpg'];
-const captions=['A moment I will always be glad we shared.','Some memories become special because they are with you.','The kind of moment I would happily relive.','One picture, and a whole story behind it.','The ordinary days became some of my favorites.','A little chapter from our story.','Moments like this deserve to be remembered.','Another memory I am grateful to call ours.','The best memories are never only photographs.','A beautiful moment from a beautiful journey.','I hope we create countless more moments like this.','A small memory with a permanent place in my heart.','Life feels warmer with you in it.','And this is still only the beginning.'];
-let galleryIndex=0,heartCount=0,starCount=0,soundEnabled=true,audioContext=null;
-function showScreen(id,progress){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));const target=document.getElementById(id);if(!target){console.error('Missing screen:',id);return}target.classList.add('active');document.getElementById('progressFill').style.width=progress+'%';window.scrollTo(0,0);playSound('transition')}
-function beginJourney(){createMemoryGame();showScreen('memoryGame',10);playSound('success')}
-function context(){if(!audioContext){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;audioContext=new AC()}if(audioContext.state==='suspended')audioContext.resume();return audioContext}
-function tone(freq,duration,volume,delay=0){if(!soundEnabled)return;const c=context();if(!c)return;const o=c.createOscillator(),g=c.createGain();o.frequency.value=freq;g.gain.setValueAtTime(.001,c.currentTime+delay);g.gain.linearRampToValueAtTime(volume,c.currentTime+delay+.02);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+delay+duration);o.connect(g);g.connect(c.destination);o.start(c.currentTime+delay);o.stop(c.currentTime+delay+duration+.05)}
-function playSound(type){if(type==='tap')tone(520,.12,.05);if(type==='match'){tone(523,.18,.06);tone(659,.22,.06,.1)}if(type==='success'){tone(523,.2,.07);tone(659,.22,.07,.12);tone(784,.3,.07,.24)}if(type==='transition'){tone(440,.18,.035);tone(554,.22,.03,.09)}}
-function toggleSound(){soundEnabled=!soundEnabled;document.getElementById('soundButton').textContent=soundEnabled?'♪':'×';if(soundEnabled)playSound('tap')}
-function createMemoryGame(){const grid=document.getElementById('memoryGrid');grid.innerHTML='';document.getElementById('memoryContinue').classList.add('hidden');document.getElementById('memoryStatus').textContent='0 of 4 pairs found';const deck=[...'🌷✨💌☕',...'🌷✨💌☕'].sort(()=>Math.random()-.5);let first=null,lock=false,matches=0;deck.forEach(symbol=>{const card=document.createElement('button');card.className='memory-card';card.innerHTML='<span class="face back">A</span><span class="face front">'+symbol+'</span>';card.onclick=()=>{if(lock||card===first||card.classList.contains('matched'))return;card.classList.add('flipped');playSound('tap');if(!first){first=card;return}lock=true;if(first.textContent===card.textContent){first.classList.add('matched');card.classList.add('matched');matches++;document.getElementById('memoryStatus').textContent=matches+' of 4 pairs found';first=null;lock=false;playSound('match');if(matches===4){document.getElementById('memoryStatus').textContent='All memories unlocked ♡';document.getElementById('memoryContinue').classList.remove('hidden')}}else{const old=first;setTimeout(()=>{old.classList.remove('flipped');card.classList.remove('flipped');first=null;lock=false},700)}};grid.appendChild(card)})}
-function openGallery(){galleryIndex=0;updatePhoto();showScreen('gallery',27)}
-function updatePhoto(){const image=document.getElementById('galleryImage');image.src='assets/photos/'+photos[galleryIndex];document.getElementById('galleryCaption').textContent=captions[galleryIndex];document.getElementById('photoCount').textContent=String(galleryIndex+1).padStart(2,'0')+' / '+String(photos.length).padStart(2,'0');if(galleryIndex===photos.length-1)document.getElementById('galleryContinue').classList.remove('hidden')}
-function nextPhoto(){if(galleryIndex<photos.length-1){galleryIndex++;updatePhoto()}playSound('tap')}
-function previousPhoto(){if(galleryIndex>0){galleryIndex--;updatePhoto()}playSound('tap')}
-function showVideo(){const v=document.getElementById('birthdayVideo');v.currentTime=0;showScreen('videoSection',46)}
-function afterVideo(){document.getElementById('birthdayVideo').pause();showScreen('heartHunt',57)}
-function findHeart(button){if(button.classList.contains('found'))return;button.classList.add('found');heartCount++;document.getElementById('huntCounter').textContent=heartCount+' / 5 hearts found';playSound('match');if(heartCount===5){document.getElementById('huntCounter').textContent='You found every heart ♡';document.getElementById('letterButton').classList.remove('hidden')}}
-function openLetter(){document.getElementById('envelope').style.display='none';document.getElementById('letterPaper').classList.add('visible');document.getElementById('letterContinue').classList.remove('hidden');document.getElementById('letterHint').textContent='A birthday message, written especially for you.';playSound('success')}
-function lightStar(button){if(button.classList.contains('lit'))return;button.classList.add('lit');starCount++;document.getElementById('starStatus').textContent=starCount+' of 5 stars glowing';tone(470+starCount*70,.25,.065);if(starCount===5){document.getElementById('starStatus').textContent='Your birthday wish is ready ✨';document.getElementById('giftButton').classList.remove('hidden')}}
-function openGift(){const box=document.getElementById('giftBox');if(box.classList.contains('open'))return;box.classList.add('open');document.getElementById('giftHint').textContent='Your gift has been unlocked ✨';playSound('success');setTimeout(()=>{box.style.display='none';document.getElementById('giftReveal').classList.add('visible');document.getElementById('progressFill').style.width='100%';confetti()},700)}
-function confetti(){const colors=['#c96f7c','#e3b2b7','#bd9462','#f0d5aa','#fff'];for(let i=0;i<70;i++){const p=document.createElement('div');p.className='confetti';p.style.left=Math.random()*100+'vw';p.style.background=colors[Math.floor(Math.random()*colors.length)];p.style.animationDelay=Math.random()*1.2+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),5000)}}
+
+function startJourney(){
+    document.getElementById("welcome").classList.add("hidden");
+    document.getElementById("gallery").classList.remove("hidden");
+}
+
+function showVideo(){
+    document.getElementById("gallery").classList.add("hidden");
+    document.getElementById("videoSection").classList.remove("hidden");
+}
+
+function showLetter(){
+    document.getElementById("videoSection").classList.add("hidden");
+    document.getElementById("letterSection").classList.remove("hidden");
+}
+
+function showGift(){
+    document.getElementById("letterSection").classList.add("hidden");
+    document.getElementById("giftSection").classList.remove("hidden");
+}
+
 </script>
+
 </body>
 </html>
